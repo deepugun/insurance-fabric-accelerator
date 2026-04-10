@@ -112,10 +112,47 @@ insurance-fabric-accelerator/
 
 ## 🚀 Quick Start
 
-1. **Configure** → Update `metadata/seed_data/` with your environment settings
-2. **Deploy** → Run `automation/deployment/deploy_all.py` or trigger GitHub Actions
-3. **Load Demo Data** → Execute `demo/generate_all.py`
-4. **Monitor** → Open the Central Cockpit dashboard
+### Option A: Fabric Mirroring (Real-Time Data) — **RECOMMENDED**
+
+**Run Notebook 15 in Fabric** — 100% Python, no PowerShell required!
+
+1. **Upload Notebook** → Import `notebooks/15_fabric_mirroring_setup.ipynb` to Fabric
+2. **Configure** → Update source system details in Section 1
+3. **Run All** → Click "Run All" (takes ~5 minutes)
+4. **Wait for Snapshot** → Initial data load (10-30 minutes)
+5. **Transform** → Run Notebook 30 (medallion transformations)
+6. **Dashboard** → View real-time KPIs in Notebook 90
+
+📖 See **[FABRIC_MIRRORING_PYTHON.md](FABRIC_MIRRORING_PYTHON.md)** for detailed guide
+
+**Benefits:**
+- ✅ **< 30 second latency** from source to Fabric
+- ✅ **No batch ETL** — automatic CDC replication
+- ✅ **Pure Python** — runs 100% in Fabric notebooks
+- ✅ **Zero maintenance** — schema sync automatic
+- ✅ **4 source systems** — Policy, Claims, Finance, CRM
+
+---
+
+### Option B: Demo Data (Synthetic Data)
+
+1. **Upload Notebooks** → Import all notebooks from `notebooks/` folder
+2. **Create Lakehouses** → `insurance_bronze`, `insurance_silver`, `insurance_gold`, `insurance_metadata`
+3. **Run Notebook 01** → Generate demo data (10K customers, 20K policies, 5K claims)
+4. **Run Notebook 30** → Execute medallion transformations
+5. **Run Notebook 90** → View dashboard
+
+---
+
+### Option C: REST API Import (Bulk Upload)
+
+Use the Python script for batch import:
+
+```bash
+python import_notebooks_to_fabric.py --workspace-id YOUR-GUID
+```
+
+See **[IMPORT_VIA_API.md](IMPORT_VIA_API.md)** for details
 
 ---
 
