@@ -199,6 +199,34 @@ See **[Notebook 55](notebooks/55_external_data_exchange_sftp.ipynb)** for detail
 
 ## 🔐 Security & Compliance
 
+### Real-Time Access Monitoring (NEW!) — Notebook 56
+
+**Comprehensive visibility and control across all access layers:**
+
+- 🖥️ **Compute Level**: Notebook executions, Spark jobs, pipeline runs
+- 📊 **Data Plane**: Table/file reads/writes, PII access tracking
+- ⚙️ **Control Plane**: Workspace changes, RBAC modifications
+
+**Key Features:**
+- ✅ Real-time anomaly detection (< 100ms overhead)
+- ✅ Auto-flag suspicious patterns (unusual time, excessive data, privilege escalation)
+- ✅ PII mass export detection (HIPAA compliance)
+- ✅ Compliance reporting (SOC 2, HIPAA, audit trails)
+- ✅ Integration with operational monitoring (Notebook 45)
+- ✅ Automatic alerts via Fabric Activator
+
+**Detected Anomalies:**
+- 🚨 Unusual time access (2 AM from 9-5 user)
+- 🚨 Excessive data access (> 100 GB/hour)
+- 🚨 Privilege escalation attempts
+- 🚨 PII mass export (> 10K rows)
+
+See **[Notebook 56](notebooks/56_access_monitoring_control.ipynb)** for implementation
+
+---
+
+### Security Foundation
+
 - **Entra ID** + Managed Identity authentication
 - **Row-Level Security** across all semantic models
 - **Column Masking** for PII (SSN, DOB, Medical)
