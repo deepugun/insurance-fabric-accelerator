@@ -174,6 +174,33 @@ See **[IMPORT_VIA_API.md](IMPORT_VIA_API.md)** for details
 
 ---
 
+## 🏗️ Infrastructure Provisioning (NEW!) — Notebook 65
+
+**Enterprise Infrastructure-as-Code for automated deployment** — Complete Terraform, Bicep, and CLI templates
+
+**Generate production-ready IaC for:**
+- ✅ **Terraform** — Enterprise-grade with remote state
+- ✅ **Bicep** — Azure-native declarative deployment
+- ✅ **Fabric CLI** — Python/Bash deployment scripts
+
+**What gets deployed:**
+- Fabric capacity (F2/F4/F64)
+- Workspace with RBAC (Admin, Contributor, Viewer)
+- 4 Lakehouses (Bronze, Silver, Gold, Metadata)
+- Warehouse (SQL analytics)
+- KQL Database (Real-time)
+- Git integration (auto-sync)
+- 17 production notebooks
+
+**Multi-environment:**
+- Dev → F2 capacity
+- Test → F4 capacity
+- Prod → F64 capacity
+
+See **[INFRASTRUCTURE_PROVISIONING_GUIDE.md](INFRASTRUCTURE_PROVISIONING_GUIDE.md)** for deployment instructions
+
+---
+
 ## 🔄 External Data Exchange (NEW!)
 
 **Enterprise-grade SFTP integration for secure data sharing with external vendors** — Notebook 55

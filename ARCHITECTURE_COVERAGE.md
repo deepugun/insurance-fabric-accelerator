@@ -289,11 +289,12 @@ Comparing **ARCHITECTURE.md** requirements against **implemented notebooks**.
 10. ✅ **50_security_compliance** - PII/PCI masking, RLS, compliance reports
 11. ✅ **55_external_data_exchange_sftp** - Secure SFTP data exchange with vendors (TPAs, reinsurers, regulators)
 12. ✅ **56_access_monitoring_control** - Real-time access monitoring (compute/data/control planes), anomaly detection, auto-flagging
-13. ✅ **60_test_runner** - Automated testing framework (unit, integration, security)
-14. ✅ **70_cicd_deployment_automation** - Git integration, pipelines, rollback
-15. ✅ **80_fabric_iq_ontology** - Insurance ontology (entities, relationships, Copilot)
-16. ✅ **90_central_cockpit_dashboard** - Unified dashboard (25+ KPIs, Direct Lake)
-17. ✅ **99_marketplace_deployment** - Marketplace packaging and deployment
+13. ✅ **65_infrastructure_provisioning_iac** - Enterprise IaC (Terraform, Bicep, Fabric CLI) for multi-environment deployment
+14. ✅ **60_test_runner** - Automated testing framework (unit, integration, security)
+15. ✅ **70_cicd_deployment_automation** - Git integration, pipelines, rollback
+16. ✅ **80_fabric_iq_ontology** - Insurance ontology (entities, relationships, Copilot)
+17. ✅ **90_central_cockpit_dashboard** - Unified dashboard (25+ KPIs, Direct Lake)
+18. ✅ **99_marketplace_deployment** - Marketplace packaging and deployment
 
 ### 🎯 Architecture Alignment
 
