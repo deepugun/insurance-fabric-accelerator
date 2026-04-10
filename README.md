@@ -252,6 +252,64 @@ See **[Notebook 56](notebooks/56_access_monitoring_control.ipynb)** for implemen
 
 ---
 
+## 📚 Business Glossary & Governance (NEW!) — Notebook 67
+
+**Self-contained enterprise metadata management with automated policy enforcement** — No Purview required!
+
+**Business Glossary Features:**
+- ✅ **Term Management** — Create, approve, version, deprecate business terms
+- ✅ **Self-Contained** — All metadata in Fabric Delta tables
+- ✅ **Category Hierarchies** — Organize by domain/category
+- ✅ **Physical Linkage** — Map terms to actual columns
+- ✅ **Auto-Linking** — Match terms to columns automatically
+- ✅ **Search & Discovery** — Full-text search across all terms
+- ✅ **Approval Workflows** — Draft → Review → Approved → Published
+- ✅ **Stewardship** — Assign owners and stewards
+
+**Policy Engine Features:**
+- 🛡️ **DDL Comment Validation** — Flag tables/columns without comments
+- 🛡️ **Business Definition Checks** — Enforce glossary linkage
+- 🛡️ **Naming Convention Rules** — Enforce standards
+- 🛡️ **Automated Scanning** — Run on every dataset (scheduled)
+- 🛡️ **Violation Tracking** — Full audit trail with remediation suggestions
+- 🛡️ **Compliance Scorecard** — Per-table metadata quality scores
+- 🛡️ **Auto-Remediation** — Suggest and apply fixes
+
+**Use Cases:**
+- 📖 **Insurance Terms** — Premium, deductible, loss ratio, FNOL, etc.
+- 🔍 **Data Discovery** — Find what columns mean across databases
+- 📊 **Compliance** — Ensure all data has business definitions
+- 🚨 **Governance Enforcement** — No undocumented data in production
+- 📈 **Quality Metrics** — Track metadata compliance over time
+
+**Example:**
+```python
+# Create business term
+glossary = BusinessGlossaryManager()
+term_id = glossary.create_term(
+    term_name="premium_amount",
+    definition="Amount paid for insurance coverage",
+    category="Financial",
+    domain="Policy"
+)
+
+# Link to physical column
+glossary.link_term_to_column(
+    term_id=term_id,
+    database_name="gold",
+    table_name="fact_premiums",
+    column_name="premium_amt"
+)
+
+# Run policy scan
+policy_engine = GovernancePolicyEngine()
+results = policy_engine.run_all_policies()
+```
+
+See **[BUSINESS_GLOSSARY_GUIDE.md](BUSINESS_GLOSSARY_GUIDE.md)** for complete documentation
+
+---
+
 ### Security Foundation
 
 - **Entra ID** + Managed Identity authentication
