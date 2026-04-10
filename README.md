@@ -170,7 +170,30 @@ See **[IMPORT_VIA_API.md](IMPORT_VIA_API.md)** for details
 | Regulatory/Compliance | ✅ | Audit trails, data retention, solvency reporting |
 | Reinsurance | ✅ | Treaty management, risk sharing |
 | Marketing/Distribution | ✅ | Campaigns, lead conversion, agent performance |
-| External Integrations | ✅ | TPAs, payment gateways, medical providers |
+| External Integrations | ✅ | **SFTP data exchange**, TPAs, payment gateways, medical providers |
+
+---
+
+## 🔄 External Data Exchange (NEW!)
+
+**Enterprise-grade SFTP integration for secure data sharing with external vendors** — Notebook 55
+
+Common use cases:
+- 📤 **Send claims to TPAs** — Daily referrals for adjudication
+- 📤 **Premium to reinsurers** — Monthly treaty reports
+- 📤 **Regulatory filings** — Solvency II, NAIC reports
+- 📤 **Commissions to brokers** — Weekly agent statements
+- 📤 **Payments to processors** — Daily approved disbursements
+- 📥 **Receive vendor data** — Medical networks, credit scores
+
+**Key Features:**
+- ✅ Secure SFTP push/pull
+- ✅ PGP encryption (HIPAA/PCI-DSS compliant)
+- ✅ Multi-format export (CSV, JSON, XML, fixed-width)
+- ✅ Automated scheduling (daily/weekly/monthly)
+- ✅ Full audit logging and monitoring
+
+See **[Notebook 55](notebooks/55_external_data_exchange_sftp.ipynb)** for details
 
 ---
 

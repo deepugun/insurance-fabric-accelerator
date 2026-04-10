@@ -287,11 +287,12 @@ Comparing **ARCHITECTURE.md** requirements against **implemented notebooks**.
 8. ✅ **40_data_quality_framework** - Metadata-driven DQ (6 dimensions, MLflow)
 9. ✅ **45_operational_monitoring** - Health scoring, incident management, observability
 10. ✅ **50_security_compliance** - PII/PCI masking, RLS, compliance reports
-11. ✅ **60_test_runner** - Automated testing framework (unit, integration, security)
-12. ✅ **70_cicd_deployment_automation** - Git integration, pipelines, rollback
-13. ✅ **80_fabric_iq_ontology** - Insurance ontology (entities, relationships, Copilot)
-14. ✅ **90_central_cockpit_dashboard** - Unified dashboard (25+ KPIs, Direct Lake)
-15. ✅ **99_marketplace_deployment** - Marketplace packaging and deployment
+11. ✅ **55_external_data_exchange_sftp** - Secure SFTP data exchange with vendors (TPAs, reinsurers, regulators)
+12. ✅ **60_test_runner** - Automated testing framework (unit, integration, security)
+13. ✅ **70_cicd_deployment_automation** - Git integration, pipelines, rollback
+14. ✅ **80_fabric_iq_ontology** - Insurance ontology (entities, relationships, Copilot)
+15. ✅ **90_central_cockpit_dashboard** - Unified dashboard (25+ KPIs, Direct Lake)
+16. ✅ **99_marketplace_deployment** - Marketplace packaging and deployment
 
 ### 🎯 Architecture Alignment
 
